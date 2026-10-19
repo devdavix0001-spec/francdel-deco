@@ -20,6 +20,10 @@
 - [x] Do not include blog cards, a blog editor, Dorcset Construction content, or cross-project branding.
 - [x] Transfer the complete source to the separate private GitHub repository [devdavix0001-spec/francdel-deco](https://github.com/devdavix0001-spec/francdel-deco); transfer verified against checkpoint `97416935053ddcc0cc5c3c7ba34889271d1f5e5d`.
 
+## Vercel publishing
+- [x] Provide a root-level static entry point and locally bundled logo/interior assets, while keeping the Manus preview copy under `site/`.
+- [ ] Fix the Vercel deployment so `https://francdel-deco.vercel.app/` loads the homepage and can be shared as a live link.
+
 ## Remaining business inputs
 - [ ] Replace bracketed copy with FRANCDEL DECO’s confirmed business description, collections, service details, brand story, FAQ answers, email, phone, address or service area, and opening hours.
 - [ ] Add a contact destination and connect the enquiry form to the chosen email or messaging workflow before expecting messages to be delivered.

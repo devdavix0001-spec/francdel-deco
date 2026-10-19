@@ -1,20 +1,18 @@
-# FRANCDEL DECO website
+# FRANCDEL DECO
 
-A standalone, responsive static website project built around the supplied FRANCDEL DECO logo. It is separate from Dorcset Construction.
+A standalone Next.js website for FRANCDEL DECO, built around the supplied logo and a black, ivory, and champagne-gold visual identity.
 
-## Files
+## Run locally
 
-- `site/` — canonical page markup, responsive styles, JavaScript interactions, route manifest, and local assets used by the Manus preview.
-- Repository-root `index.html`, `styles.css`, `main.js`, `manus-routes.json`, and `assets/` — synchronized static-site copy for Vercel’s default repository-root deployment.
-- `app.config.ts` — Manus project branding metadata.
-- `TODO.md` — approved outcomes and remaining business inputs.
+```bash
+npm install
+npm run dev
+```
 
-The page is plain HTML, CSS, and JavaScript. It needs no package installation, framework runtime, database, or backend. When editing the site, keep the repository-root static files synchronized with `site/` so both the Manus preview and Vercel serve the same page.
+Open `http://localhost:3000`. Use `npm run build` to verify a production build, then `npm run start` to serve it. The app is deployable to Vercel as a standard Next.js project with the repository root as the project directory.
 
-## Update before public launch
+## Content before launch
 
-Replace bracketed copy in the page with FRANCDEL DECO’s confirmed business description, product categories, services, story, FAQ answers, email, phone, address, service area, and opening hours. The collection labels and process text are examples, not confirmed business details. Do not add product prices or availability until supplied.
+The page intentionally retains clearly marked placeholders for FRANCDEL DECO's confirmed business description, collections, services, story, FAQ answers, email, phone, address, service area, and opening hours. The enquiry form validates fields and prepares a copyable browser message; it does not send data until a contact destination is approved and connected.
 
-The enquiry form validates its fields and prepares a message in the browser. Since no email or phone number was supplied, it does not send the enquiry yet. Add and approve the business’s contact destination before connecting the form to email or WhatsApp. No form data is saved by this static site.
-
-The supplied logo and generated interior images are included in `assets/` and `site/assets/` so the Vercel copy does not depend on Manus-only storage URLs. Replace the generated interior visuals with approved product or showroom photography when available, and update the descriptive metadata when the final public brand copy is approved.
+Approved product or showroom photography can replace the current supplied/generated interior visuals in `public/assets/`.

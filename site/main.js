@@ -46,7 +46,12 @@ if (form && result && copyButton) {
       await navigator.clipboard.writeText(enquiryText);
       copyButton.textContent = 'Enquiry copied';
     } catch {
-      copyButton.textContent = 'Select and copy the enquiry text above';
+      const selection = window.getSelection();
+      const range = document.createRange();
+      range.selectNodeContents(result);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      copyButton.textContent = 'Select the highlighted text and copy';
     }
   });
 }
